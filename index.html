@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+
+  <body>
+    <h3>Rock Paper Scissors Game</h3>
+
+    <!--Rock button-->
+    <button onclick="
+    let choice = randomNumber();
+    console.log(choice);
+    if (choice <= 33){
+      alert('You picked Rock. Computer picked Rock. I\'s a tie ');
+    }else if (choice >= 66){
+      alert('You picked Rock. Computer picked Scissors. CONGRATULATIONS! You win!')
+    } else{
+      alert('You picked Rock. Computer picked Paper. You lost!')
+    }
+    ">Rock</button>
+
+    <!--Paper button-->
+    <button onclick="
+    choice = randomNumber();
+    console.log(choice)
+    if (choice <= 33){
+      alert('You picked Paper. Computer picked Rock. You win! ');
+    }else if (choice >= 66){
+      alert('You picked Paper. Computer picked Scissors. You lose!')
+    } else{
+      alert('You picked Paper. Computer picked Paper. It\'s a tie!')
+    }
+    ">Paper</button>
+
+    <!--Scissors button-->
+    <button onclick="
+    choice = randomNumber();
+    console.log(choice);
+    if (choice <= 33){
+      alert('You picked Scissors. Computer picked Rock. You lose');
+    }else if (choice >= 66){
+      alert('You picked Scissors. Computer picked Scissors. It\'s a tie!')
+    } else{
+      alert('You picked Scissors. Computer picked Paper. You win!')
+    }
+    ">Scissors</button>
+
+    <script>
+    function randomNumber(){
+
+      return Math.floor(Math.random()*100);
+    }
+    
+    
+    
+    </script>
+  </body>
+</html>
